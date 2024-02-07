@@ -1,30 +1,53 @@
-# React + TypeScript + Vite
+# Movie Micker Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Описание
+Movie Micker - это приложение, которое позволяет пользователям собираться в лобби и совместно выбирать фильмы по определённым жанрам и годам.
 
-Currently, two official plugins are available:
+## Требования
+- Node.js
+- Yarn
+- Git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Установка
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Склонируйте репозиторий:
+```bash
+git clone <ссылка на репозиторий>
 ```
+## Настройка проекта
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Переход в папку проекта:
+```bash
+cd movie-micker
+```
+###Установка зависимостей:
+```bash
+npm install
+```
+###Запуск проекта
+```bash
+npm run dev
+```
+## Используемые технологии
+
+- React.js
+- Vite
+- TanStack Query
+- TypeScript
+
+## Функциональность
+
+- Собирание в лобби
+- Выбор фильмов по жанрам и годам
+
+## Структура проекта
+
+- `src/` - исходный код приложения
+  - `components/` - компоненты React
+  - `hooks/` - пользовательские хуки
+  - `pages/` - страницы приложения
+  - `api/` - сервисы для работы с API
+  - `constants/` - константы
+  - `types/` - типы
+  - `assets/` - статические файлы
+- `...`
