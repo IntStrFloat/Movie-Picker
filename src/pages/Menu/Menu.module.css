@@ -1,0 +1,160 @@
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+.topSeporator {
+  margin-left: -22px;
+
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+.active {
+  transform: rotate(10.2deg);
+  margin-left: -3px;
+  margin-bottom: -105px;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.input {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  color: #fafafa;
+  font-family: "Rubik Mono One", monospace;
+  font-size: 40px;
+  font-weight: 400;
+  border: none;
+  line-height: normal;
+  transition: all 0.2s ease-in-out;
+}
+.input::placeholder {
+  font-family: "Rubik Mono One", monospace;
+  font-size: 40px;
+  font-weight: 400;
+  border: none;
+  line-height: normal;
+}
+.conteiner {
+  margin: 0 auto;
+  width: 1200px;
+  height: 600px;
+  border-radius: 0px 0px 40px 40px;
+  background: #2f2f2f;
+}
+.conteiner div {
+  height: 110px;
+}
+
+.newGame {
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+}
+.inviteFriends {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  overflow: hidden;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+}
+.topSeparator {
+  /* Градиентный фон */
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden !important;
+  justify-content: space-between;
+}
+
+.whiteBlank {
+  width: 120px;
+  transform: rotate(30deg);
+  background-color: white;
+  height: 200px !important;
+}
+.newGame {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  overflow: hidden;
+}
+.newGameP {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: inherit;
+  text-align: center;
+  text-decoration: none;
+  border-right: 10px solid white;
+  color: #fafafa;
+  font-family: "Rubik Mono One", monospace;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 45px !important;
+}
+.newGameP:hover {
+  background-color: white;
+
+  color: #2f2f2f;
+}
+.inviteButton {
+  width: 335px;
+  height: 100%;
+  background-color: inherit;
+  color: #fafafa;
+  font-family: "Rubik Mono One", monospace;
+  font-size: 40px;
+  font-weight: 400;
+  border: none;
+  line-height: normal;
+  border-right: 10px solid white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.inviteButton:hover {
+  background-color: white;
+  color: #2f2f2f;
+}
+.chooseButton {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  color: #fafafa;
+  font-family: "Rubik Mono One", monospace;
+  font-size: 40px;
+  font-weight: 400;
+  border: none;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.chooseButton:hover {
+  background-color: white;
+  color: #2f2f2f;
+}
+.pandus {
+  width: 153px;
+  height: 125px;
+
+  background: #d9d9d9;
+  margin-bottom: -50px;
+}

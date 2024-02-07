@@ -1,0 +1,106 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+  align-items: center;
+}
+.playersWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 870px;
+}
+
+.optionsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-height: 870px;
+}
+.descriptionWrapper {
+  max-height: 870px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.description {
+  overflow-y: scroll;
+  scroll-behavior: smooth; /* Плавная прокрутка */
+  max-width: 450px;
+  font-size: 15px !important;
+}
+.description::-webkit-scrollbar {
+  /* Стилизация скроллбара WebKit (Chrome, Safari) */
+  height: 8px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+}
+.genres {
+  max-width: 450px !important;
+}
+.genresWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 450px !important;
+}
+.wrapper.popupOpen::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* полупрозрачный черный цвет */
+  z-index: 999; /* убедитесь, что это значение больше, чем у самого popup окна */
+}
+@media (max-width: 1600px) {
+  .genresWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: none !important;
+  }
+  .description {
+    max-width: 300px;
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 1400px) {
+  .title {
+    font-size: 12px !important;
+  }
+  .genre {
+    font-size: 12px !important;
+  }
+}
+.genre {
+  font-size: 20px;
+}
+.filmCardWrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Замените на высоту вашего компонента */
+}
+.caard {
+  transition: top 0.5s ease !important;
+}
+.enter {
+  opacity: 0 !important;
+  transform: translateY(100%);
+}
+
+.exitActive {
+  opacity: 0;
+  transform: translateY(-1000%);
+  transition: transform 500ms;
+}

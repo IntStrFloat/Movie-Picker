@@ -1,0 +1,115 @@
+.wrapper {
+  height: 100vh;
+  max-width: 800px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  justify-items: center;
+  transition: all 0.5s ease;
+}
+.exiting {
+  transform: translateY(-100vh);
+}
+.entering {
+  opacity: 0; /* Начальное значение непрозрачности */
+  transform: translateY(-100vh); /* Начальное значение сдвига вверх */
+  transition: opacity 0.5s ease, transform 0s ease; /* Анимация появления */
+}
+.cardWrapper {
+  height: 100dvh !important;
+  width: 50dvw;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.image {
+  width: 100%; /* Ширина для занимания всей ширины контейнера */
+  height: 100vh;
+  position: relative;
+}
+.poster {
+  position: absolute;
+  width: 60%;
+  top: 45%;
+  left: 50%;
+  border-radius: 40px;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Помещаем поверх image-1 */
+}
+
+@media screen and (max-height: 900px) {
+  .poster {
+    max-width: 400px;
+    max-height: 500px;
+  }
+}
+@media screen and (max-height: 700px) {
+  .poster {
+    max-width: 200px;
+    max-height: 300px;
+  }
+}
+.wr {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 1000px;
+  width: 100% !important;
+  z-index: 10;
+}
+.buttonWrapper {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 60%;
+  left: 0;
+  right: 0;
+  bottom: 8%;
+  height: 80px;
+  z-index: 2; /* Помещаем поверх image-1 */
+}
+@media screen and (max-width: 1350px) {
+  .buttonWrapper {
+    bottom: 15%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .buttonWrapper {
+    bottom: 20%;
+  }
+  .dislike {
+    width: 150px !important;
+    font-size: 20px !important;
+  }
+  .like {
+    width: 150px !important;
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .buttonWrapper {
+    bottom: 25%;
+  }
+  .dislike {
+    height: 50px !important;
+    font-size: 20px !important;
+  }
+  .like {
+    height: 50px !important;
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 890px) {
+  .buttonWrapper {
+    bottom: 30%;
+  }
+}
+.filmCardContainer {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Замените на высоту вашего компонента */
+}

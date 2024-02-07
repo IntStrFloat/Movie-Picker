@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 40px;
+  height: 800px;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.likedFilms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.likedFilms span {
+  margin: 50px 0px;
+  font-family: "Rubik Mono One", monospace;
+  font-size: 40px;
+}
+.filmList {
+  display: flex;
+  max-width: 1030px;
+  gap: 20px;
+  overflow-x: auto; /* Горизонтальная прокрутка появится при достижении максимальной ширины */
+  overflow-y: hidden; /* Скрыть вертикальную прокрутку, если не нужна */
+  scroll-behavior: smooth;
+  scrollbar-color: black;
+}
+.filmList::-webkit-scrollbar-thumb {
+  background-color: #8a8a8a; /* Цвет ползунка скроллбара */
+  border-radius: 10px; /* Скругление углов ползунка */
+}
+.filmList::-webkit-scrollbar {
+  /* Стилизация скроллбара WebKit (Chrome, Safari) */
+  height: 8px !important;
+  background-color: antiquewhite;
+  border-radius: 10px; /* Скругление углов ползунка */
+}
+.button {
+  text-wrap: nowrap;
+  min-width: 400px;
+}

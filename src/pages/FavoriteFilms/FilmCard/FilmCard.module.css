@@ -1,0 +1,22 @@
+.wrapper {
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  padding: 20px 20px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.wrapper h2 {
+  font-size: 17px;
+  align-self: flex-start;
+}
+.image {
+  object-fit: cover;
+  border-radius: 30px;
+  width: 200px !important;
+  height: 300px;
+  align-self: flex-end !important;
+}
